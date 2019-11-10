@@ -43,143 +43,110 @@
 <body>
 
 	<main class="Loop js-loop">
+		<div class="main_wrapper">
 
-		<section class="start">
-			<h1>OFFICE ON DEMAND</h1>
-			<img src="logo.png" alt="Logo">
-		</section>
+			<section class="start">
+				<div class="fixed">
+					<h1>OFFICE ON DEMAND</h1>
+					<img class="logo" src="logo.png" alt="Logo">
+				</div>
 
-		<section>
-			<img src="fotos/1.jpg" alt="Photo">
-		</section>
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/1.jpg&h=700" alt="Photo">
+			</section>
 
-		<section>
-			<h2>AVAILABLE</h2>
-			<h3>DEVELOPING STRATEGIES FOR <br>UNCONDITIONAL PRESENCE,</h3>
-			<img src="fotos/2.jpg" alt="Photo">
+			<section class="available">
+				<h2>AVAILABLE</h2>
+				<h3>DEVELOPING STRATEGIES FOR <br>UNCONDITIONAL PRESENCE,</h3>
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/2.jpg&h=700" alt="Photo">
 
-			<p>A temporary platform platform to step in and out at any time. On and off screen the office and the worker are never inaccessible, the office and the worker are never not one.</p>
+				<p>A temporary platform platform to step in and out at any time.
+					<br>On and off screen the office and the worker are never inaccessible, the office and the worker are never not one.</p>
 
-			<img src="fotos/3.jpg" alt="Photo">
-		</section>
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/3.jpg&h=700" alt="Photo">
+			</section>
 
-		<section>
-			<h2>FLEXIBLE</h2>
-			<h3>PERFORMING FREE <br>UNCONSTRAINED WORK,</h3>
-			<img src="fotos/4.jpg" alt="Photo">
+			<section class="flexible">
+				<h2></h2>
+				<h3>PERFORMING FREE <br>UNCONSTRAINED WORK,</h3>
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/4.jpg&h=700" alt="Photo">
 
-			<p>The office can be stretched, expanded, condensed, modified and amplified. It transforms adaptability into norm, free movement into performance. It aims toward frictionless dynamism. Open plans, glass walls, communal table-desks, high
-				ceilings and no doors.</p>
+				<p>The office can be stretched, expanded, condensed, modified and amplified.
+					<br>It transforms adaptability into norm, free movement into performance.
+					<br>It aims toward frictionless dynamism. Open plans, glass walls, communal table-desks, high
+					ceilings and no doors.</p>
 
-			<img src="fotos/5.jpg" alt="Photo">
-			<img src="fotos/6.jpg" alt="Photo">
-		</section>
+				<img class="margin-bottom" src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/5.jpg&h=700" alt="Photo">
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/6.jpg&h=700" alt="Photo">
+			</section>
 
-		<section>
-			<h2>VERSATILE</h2>
-			<h3>OFFERING MULTIFUNCTIONAL TOOLS FOR OPTIMISED EFFICIENCY,</h3>
-			<img src="fotos/7.jpg" alt="Photo">
+			<section class="versatile">
+				<h2><span>V</span>ersatile</h2>
+				<h3>OFFERING
+					<br>MULTIFUNCTIONAL TOOLS
+					<br>FOR OPTIMISED EFFICIENCY,</h3>
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/7.jpg&h=700" alt="Photo">
 
-			<p>The office presents the worker with different solutions for different problems. It beats obstacles with creativity, restless struggle with motivation, constant uncertainty with hacks.</p>
+				<p>The office presents the worker with different solutions for different problems.
+					<br>It beats obstacles with creativity, restless struggle with motivation, constant uncertainty with hacks.</p>
 
-			<img src="fotos/8.jpg" alt="Photo">
-			<img src="fotos/8.jpg" alt="Photo">
-		</section>
+				<img class="margin-bottom" src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/8.jpg&h=700" alt="Photo">
+				<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/9.jpg&h=700" alt="Photo">
+			</section>
 
-		<!--
+			<section class="final">
+				<h4 class="available_font">AVAILABLE</h4>
+				<h4 class="flexible_font"></h4>
+				<h4 class="versatile_font">Versatile</h4>
+			</section>
+
+			<!--
   These blocks are the same as the first blocks to get that looping illusion going.
   You need to add clones to fill out a full viewport height.
   -->
-		<section class="start is-clone">
+			<!-- <section class="start is-clone">
 			<h1>OFFICE ON DEMAND</h1>
 			<img src="logo.png" alt="Logo">
 		</section>
 
 		<section class="is-clone">
 			<img src="fotos/1.jpg" alt="Photo">
-		</section>
+		</section> -->
+		</div>
 	</main>
 
 
 	<script type="text/javascript">
-		var doc = window.document,
-			context = doc.querySelector('.js-loop'),
-			clones = context.querySelectorAll('.is-clone'),
-			disableScroll = false,
-			scrollHeight = 0,
-			scrollPos = 0,
-			clonesHeight = 0,
-			i = 0;
-
-		function getScrollPos() {
-			return (context.pageYOffset || context.scrollTop) - (context.clientTop || 0);
-		}
-
-		function setScrollPos(pos) {
-			context.scrollTop = pos;
-		}
-
-		function getClonesHeight() {
-			clonesHeight = 0;
-
-			for (i = 0; i < clones.length; i += 1) {
-				clonesHeight = clonesHeight + clones[i].offsetHeight;
-			}
-
-			return clonesHeight;
-		}
-
-		function reCalc() {
-			scrollPos = getScrollPos();
-			scrollHeight = context.scrollHeight;
-			clonesHeight = getClonesHeight();
-
-			if (scrollPos <= 0) {
-				setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
-			}
-		}
-
-		function scrollUpdate() {
-			if (!disableScroll) {
-				scrollPos = getScrollPos();
-
-				if (clonesHeight + scrollPos >= scrollHeight) {
-					// Scroll to the top when you’ve reached the bottom
-					setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
-					disableScroll = true;
-				} else if (scrollPos <= 0) {
-					// Scroll to the bottom when you reach the top
-					setScrollPos(scrollHeight - clonesHeight);
-					disableScroll = true;
-				}
-			}
-
-			if (disableScroll) {
-				// Disable scroll-jumping for a short time to avoid flickering
-				window.setTimeout(function() {
-					disableScroll = false;
-				}, 40);
-			}
-		}
-
-		function init() {
-			reCalc();
-
-			context.addEventListener('scroll', function() {
-				window.requestAnimationFrame(scrollUpdate);
-			}, false);
-
-			window.addEventListener('resize', function() {
-				window.requestAnimationFrame(reCalc);
-			}, false);
-		}
-
-		if (document.readyState !== 'loading') {
-			init()
-		} else {
-			doc.addEventListener('DOMContentLoaded', init, false)
-		}
-
+		// var doc = window.document,
+		// context = doc.querySelector('.js-loop'),
+		// clones = context.querySelectorAll('.is-clone'),
+		// disableScroll = false,
+		// scrollHeight = 0,
+		// scrollPos = 0,
+		// clonesHeight = 0,
+		// i = 0;
+		//
+		// function getScrollPos() {
+		// return (context.pageYOffset || context.scrollTop) - (context.clientTop || 0);
+		// }
+		//
+		// function setScrollPos(pos) {
+		// context.scrollTop = pos;
+		// }
+		//
+		// function getClonesHeight() {
+		// clonesHeight = 0;
+		//
+		// for (i = 0; i < clones.length; i +=1) { // clonesHeight=clonesHeight + clones[i].offsetHeight; // } // // return clonesHeight; // } // // function reCalc() { // scrollPos=getScrollPos(); // scrollHeight=context.scrollHeight;
+		//clonesHeight = getClonesHeight(); // // if (scrollPos <=0) { // setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling // } // } // // function scrollUpdate() { // if (!disableScroll) { // scrollPos=getScrollPos();
+		// if (clonesHeight + scrollPos >= scrollHeight) {
+		// // Scroll to the top when you’ve reached the bottom
+		// setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
+		// disableScroll = true;
+		// } else if (scrollPos <= 0) { // // Scroll to the bottom when you reach the top // setScrollPos(scrollHeight - clonesHeight);
+		// disableScroll=true; // } // } // // if (disableScroll) { // // Disable scroll-jumping for a short time to avoid flickering
+		// window.setTimeout(function() { // disableScroll=false; // }, 40); // } // } // // function init() { // reCalc(); // // context.addEventListener('scroll', function() { // window.requestAnimationFrame(scrollUpdate); // }, false);
+		// window.addEventListener('resize', function() { // window.requestAnimationFrame(reCalc); // }, false); // } // // if (document.readyState !=='loading' ) { // init() // } else { // doc.addEventListener('DOMContentLoaded', init, false)
+		// }
 
 		// Just for this demo: Center the middle block on page load
 		// window.onload = function() {
