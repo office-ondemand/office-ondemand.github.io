@@ -1,0 +1,49 @@
+
+::scrollbar {
+  display: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+
+	font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+
+.Loop {
+	height: 100%;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+	background: rgb(2,0,36);
+	background: linear-gradient(281deg, rgba(2,0,36,1) 0%, rgba(63,63,144,1) 27%, rgba(0,212,255,1) 100%);
+}
+
+section {
+  position: relative;
+  text-align: center;
+  height: unset;
+	min-height: 100vh;
+
+	padding: 50px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+img {
+	max-width: 700px;
+	max-height: 700px;
+}

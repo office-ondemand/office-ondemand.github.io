@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'SF Sports Night NS';
+    src: url('SFSportsNightNS.woff2') format('woff2'),
+        url('SFSportsNightNS.woff') format('woff'),
+        url('SFSportsNightNS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scto Grotesk A';
+    src: url('SctoGroteskA-Regular.woff2') format('woff2'),
+        url('SctoGroteskA-Regular.woff') format('woff'),
+        url('SctoGroteskA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('GTAmerica-Medium.woff2') format('woff2'),
+        url('GTAmerica-Medium.woff') format('woff'),
+        url('GTAmerica-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vivaldi';
+    src: url('Vivaldi.woff2') format('woff2'),
+        url('Vivaldi.woff') format('woff'),
+        url('Vivaldi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
