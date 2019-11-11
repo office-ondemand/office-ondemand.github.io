@@ -36,7 +36,7 @@ h1 {
   margin: 0;
   font-family: 'GT America', Helvetica, sans-serif;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   text-shadow: 0 0 7px #e6e7e8;
   top: 10px;
@@ -196,7 +196,7 @@ section.start img {
 section.available h2 {
   font-family: 'Scto Grotesk A', Helvetica, sans-serif;
   font-size: 160px;
-  font-weight: 100;
+  font-weight: 300;
   text-shadow: 0 0 32px #e6e7e8;
 }
 
@@ -255,7 +255,7 @@ section.versatile h2 {
   text-shadow: 0 0 47px #e6e7e8;
   font-family: 'Vivaldi', Helvetica, sans-serif;
   font-size: 235px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -328,7 +328,7 @@ section.final {
 
 section.final h4 {
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   -webkit-filter: drop-shadow(0 0 20px #e6e7e8);
   filter: drop-shadow(0 0 20px #e6e7e8);
   margin-bottom: -5px;
@@ -352,7 +352,7 @@ section.final .flexible_font {
 
 section.final .versatile_font {
   font-family: 'Vivaldi', Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 35px;
   margin-bottom: 10px;
 }
