@@ -36,13 +36,14 @@
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="style.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 </head>
 
 <body>
 
 	<main class="main">
+
+		<div class="background"></div>
+
 		<div class="main_wrapper">
 
 			<h1>OFFICE ON DEMAND</h1>
@@ -70,7 +71,7 @@
 					<img src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/2-1.jpg&h=700&dpr=2" alt="Photo">
 				</picture>
 
-				<p>A temporary platform platform to step in and out at any time.
+				<p>A temporary platform to step in and out at any time.
 					<br>On and off screen the office and the worker are never inaccessible, the office and the worker are never not one.</p>
 
 				<picture>
@@ -162,6 +163,22 @@
 		</div>
 	</main>
 
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(e) {
+			var scrolled = document.querySelector('body').scrollTop;
+			const background = document.querySelector('.background');
+			background.style.top = (scrolled * 0.5) + 'px';
+
+			if (scrolled >= (window.innerHeight / 2 - 100 - 50)) {
+				document.querySelector("h1").classList.add("fixed");
+			} else {
+				document.querySelector("h1").classList.remove("fixed");
+			}
+		}, {
+			capture: true,
+			passive: true
+		})
+	</script>
 </body>
 
 </html>
