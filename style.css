@@ -39,8 +39,10 @@ h1 {
   font-weight: 300;
   text-align: center;
   text-shadow: 0 0 7px #e6e7e8;
-  top: 10px;
+  position: absolute;
+  top: calc(50vh - 100px);
   left: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 @media (max-width: 350px) {
@@ -51,6 +53,7 @@ h1 {
 
 h1.fixed {
   position: fixed;
+  top: 10px;
   transform: translate3d(-50%, 0, 0);
 }
 
