@@ -33,24 +33,19 @@ img {
 
 h1 {
   width: 100%;
+  margin: 0;
   font-family: 'GT America', Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 100;
   text-align: center;
   text-shadow: 0 0 7px #e6e7e8;
-  top: 40px;
+  top: 10px;
   left: 50%;
 }
 
 @media (max-width: 350px) {
   h1 {
     font-size: 25px;
-  }
-}
-
-@media (max-width: 550px) {
-  h1 {
-    top: 20px;
   }
 }
 
@@ -208,6 +203,7 @@ section.available h2 {
 @media (min-width: 768px) and (max-width: 1024px) {
   section.available h2 {
     font-size: 120px;
+    text-shadow: 0 0 24px #e6e7e8;
   }
 }
 
@@ -226,6 +222,7 @@ section.available h2 {
 @media (max-width: 350px) {
   section.available h2 {
     font-size: 45px;
+    text-shadow: 0 0 9px #e6e7e8;
   }
 }
 
@@ -255,6 +252,7 @@ section.flexible h2 {
 }
 
 section.versatile h2 {
+  text-shadow: 0 0 47px #e6e7e8;
   font-family: 'Vivaldi', Helvetica, sans-serif;
   font-size: 235px;
   font-weight: 100;
@@ -263,6 +261,7 @@ section.versatile h2 {
 @media (min-width: 768px) and (max-width: 1024px) {
   section.versatile h2 {
     font-size: 165px;
+    text-shadow: 0 0 33px #e6e7e8;
   }
 }
 
@@ -286,6 +285,7 @@ section.versatile h2 {
 @media (max-width: 350px) {
   section.versatile h2 {
     font-size: 90px;
+    text-shadow: 0 0 18px #e6e7e8;
   }
 }
 
@@ -331,7 +331,7 @@ section.final h4 {
   font-weight: 100;
   -webkit-filter: drop-shadow(0 0 20px #e6e7e8);
   filter: drop-shadow(0 0 20px #e6e7e8);
-  margin-bottom: 15px;
+  margin-bottom: -5px;
 }
 
 section.final .available_font {
@@ -339,7 +339,7 @@ section.final .available_font {
 }
 
 section.final .flexible_font {
-  margin: 15px 0 5px;
+  margin: 15px 0 -15px;
   width: 130px;
   height: 30px;
   background-image: url("flexible-small.svg");
@@ -354,7 +354,7 @@ section.final .versatile_font {
   font-family: 'Vivaldi', Helvetica, sans-serif;
   font-weight: 100;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /* .Loop {
