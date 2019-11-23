@@ -21,13 +21,13 @@ html {
 }
 
 picture img {
-  max-height: 700px;
+  height: 700px;
 }
 
 @media (max-width: 768px) {
   picture img {
     max-height: unset;
-    max-width: 80vw;
+    width: 80vw;
   }
 }
 
@@ -75,23 +75,21 @@ h1.fixed {
 
 .main .background {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background-image: url("fundo.jpg");
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: repeat-y;
-  -webkit-filter: blur(15px) grayscale(0.6);
-  filter: blur(15px) grayscale(0.6);
+  -webkit-filter: blur(10px) grayscale(0.6);
+  filter: blur(10px) grayscale(0.6);
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform-origin: center center;
-  -moz-transform-origin: center center;
-  -ms-transform-origin: center center;
-  -o-transform-origin: center center;
-  transform-origin: center center;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
 

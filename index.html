@@ -150,7 +150,7 @@
 					<source media="(max-width: 768px)" data-srcset="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/9-1.jpg&w=600&dpr=2&q=80">
 					<source media="(max-width: 500px)" data-srcset="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/9-1.jpg&w=400&dpr=2&q=80">
 
-					<img 0 src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/7-1.jpg&w=3&q=10" data-src="https://office-ondemand.co.uk/fotos/9-1.jpg" alt="Photo">
+					<img class="lazyload" src="https://images.weserv.nl/?url=https://office-ondemand.co.uk/fotos/9-1.jpg&w=3&q=10" data-src="https://office-ondemand.co.uk/fotos/9-1.jpg" alt="Photo">
 				</picture>
 
 			</section>
@@ -180,14 +180,15 @@
 			}
 			window.requestAnimationFrame(scrollListenerDesktop);
 		};
-		scrollListenerDesktop();
+
+		window.requestAnimationFrame(scrollListenerDesktop);
 
 		function parallax() {
 			var scrolled = document.querySelector('body').scrollTop;
 			if (window.matchMedia("(min-width: 768px)").matches) {
-				const background = document.querySelector('.background');
-				background.style.transform = 'translate3d(0,' + (scrolled * 0.5) + 'px, 0)';
-			}
+const background = document.querySelector('.background');
+background.style.transform = 'translate3d(0,' + (scrolled * 0.5) + 'px, 0)';
+}
 			if (scrolled >= (window.innerHeight / 2 - 100 - 30)) {
 				document.querySelector("h1").classList.add("fixed");
 			} else {
