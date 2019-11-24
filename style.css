@@ -27,6 +27,7 @@ picture img {
 @media (max-width: 768px) {
   picture img {
     max-height: unset;
+    height: unset;
     width: 80vw;
   }
 }
